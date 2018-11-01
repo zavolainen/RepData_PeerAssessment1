@@ -22,7 +22,7 @@ if (!file.exists(fileName)) {
 # unzip data file if data directory doesn't exist
 dataPath <- "activity"
 if (!file.exists(dataPath)) {
-        unzip(zipFile)
+        unzip(fileName)
 }
 
 data <- read.csv("./activity/activity.csv")
